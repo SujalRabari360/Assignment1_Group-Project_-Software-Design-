@@ -1,0 +1,42 @@
+SYST 17796 Deliverable 1 
+design document template.
+
+Overview
+Project Background and Description
+The project aims to extend and refactor the provided base code to implement a card game. The final vision is to create a playable and functional version of the chosen card game, adhering to the rules and mechanics of the game.
+We have chosen the card game Go Fish for our project. In Go Fish, players take turns asking opponents for specific cards to match sets of four cards of the same rank. If the opponent has the requested card, they must hand it over. If not, the player must "go fish" and draw a card from the deck. The game continues until all sets of four cards (books) are formed.
+The starting base code is written in Java and provides foundational classes for modeling cards, players, and the game itself. It follows object-oriented principles and uses conventions such as proper naming, encapsulation, and abstraction.
+Project Scope
+Team Members:
+Sujal Rabari
+Darshan Jagani 
+Diya Patel
+
+The technical scope of the project entails leveraging the provided Java base code to construct the Go Fish card game, employing object-oriented principles for a modular and extensible architecture. The game interface will be text-based, facilitating player interactions through command-line inputs without the need for graphical user interface development. Data management will involve storing game state data, including player hands, scores, and the card deck, within the program's memory, without integrating external databases. Code organization will adhere to Java conventions for readability and maintainability, with logical structuring of classes and packages. 
+
+
+
+High-Level Requirements
+ 
+[Describe the high level requirements for the project. For example:]
+
+The high-level requirements for the project encompass crucial functionalities ensuring a seamless gameplay experience. Players must be able to register with the game, providing necessary information for identification. The game should effectively communicate a win or loss condition, signaling the end of the game session. Additionally, players must have access to their status, including their score, throughout the game to track progress. These requirements form the backbone of the system, guaranteeing that players can engage in the game of Go Fish with clarity and confidence, while also facilitating efficient game management and outcome determination.
+
+Implementation Plan
+Git Repository URL: [https://github.com/SujalRabari360/Assignment1_Group-Project_-Software-Design-]
+Developers will check code at the end of each development session or milestone.
+Text files will be stored under a separate directory, code will have its own folder, and UML diagrams will have their own folder.
+Coding Standards:
+Follow Java coding conventions for naming and formatting.
+Tools:
+Visual Paradigm (VP) for creating UML diagrams.
+NetBeans or Eclipse as the Integrated Development Environment (IDE).
+Design Considerations
+Encapsulation:
+The Card class encapsulates the value and suit of a card, providing getter methods to access these attributes. The player’s hand is encapsulated within the Player class, and access is provided through getter and setter methods.
+Delegation:
+The Game class delegates specific game logic to its subclasses, such as declaring a winner in the GoFish class. The GoFish class delegates tasks such as asking for cards, removing cards from the hand, and checking for books to respective methods.
+
+
+Flexibility/Maintainability:
+The base code is structured in a modular and organized manner, allowing for easy extension and modification. Future enhancements or changes to the game rules can be implemented by extending existing classes or adding new ones.
